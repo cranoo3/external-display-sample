@@ -5,7 +5,7 @@
 //  Created by cranoo on 2026/03/23.
 //
 
-import UIKit
+import SwiftUI
 
 class ExternalDisplaySceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
@@ -18,7 +18,7 @@ class ExternalDisplaySceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene, session.role == .windowExternalDisplayNonInteractive else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UIViewController()
+        window.rootViewController = UIHostingController(rootView: ExternalDisplayContentView())
         window.isHidden = false
         self.window = window
     }
