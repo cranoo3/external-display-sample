@@ -14,7 +14,7 @@ class ExternalSceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = scene as? UIWindowScene, session.role == .windowExternalDisplayNonInteractive else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        window.rootViewController = UIViewController()
+        window.rootViewController = ExternalViewController()
         window.isHidden = false
         self.window = window
     }
