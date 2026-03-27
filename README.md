@@ -5,7 +5,7 @@
 ## 使用方法
 
 - `.xcworkspace`をXcodeで開いてください
-- 
+
 ### ビルドスキームを変更する
   - UIKitのサンプルでビルドしたい場合 → `UIKitSample` 
   - SwiftUIのサンプルでビルドしたい場合 → `SwiftUISample`
